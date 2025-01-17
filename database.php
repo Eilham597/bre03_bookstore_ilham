@@ -1,4 +1,7 @@
 <?php
+
+// fichier initial d'Ilham de connexion à sa bd, mais je ne sais pas comment il fonctionne, alors j'ai modifié sa strucutre pour faire comme la mienne - Sabrina
+
 class Database {
     private string $host = 'localhost';
     private string $dbname = 'ilhamechemmakh_poo3';

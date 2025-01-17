@@ -1,4 +1,6 @@
 <?php
+require "../connexion.php";
+
 class Book {
     private int $id;
     private string $title;
@@ -56,4 +58,13 @@ class Book {
     public function display(): void {
         var_dump($this);
     }
+    
+}
+
+// affichage des livres = ok (Sabrina)
+$query = $db->query("SELECT * FROM books");
+$books = $query->fetchAll(PDO::FETCH_ASSOC);
+
+foreach ($books as $book) {
+    var_dump($book);
 }

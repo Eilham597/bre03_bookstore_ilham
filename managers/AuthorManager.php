@@ -1,4 +1,7 @@
 <?php
+
+require "../connexion.php";
+
 class AuthorManager {
     private PDO $connection;
 
